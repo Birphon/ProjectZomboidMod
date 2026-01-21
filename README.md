@@ -6,10 +6,10 @@ Do note this current mod is for development of Build 42, specifically Build 42.1
 This mod will also be coded in LUA, while Java would be "better" in a sense as its more "open" compared to LUA, the Steam Workshop doesn't accept Java mods - I believe this is down to .jar technically being execution files.
 
 The plan is to iterate through modding development and potentially help new modders out as they will be able to look through all the Pushes to figure out what has been done.
-The first push is going for be the folder setup in C:\Users\[User]\Zomboid\Workshop
+The first push is going for be the folder setup in `C:\Users\[User]\Zomboid\Workshop\[FolderName]`
 
 Some knowledge points:
-Zomboid Workshop folder: C:\Users\[User]\Zomboid\Workshop
+Zomboid Workshop folder: `C:\Users\[User]\Zomboid\Workshop`
 This is where we will actually be making our mods
 Note that the "mods" folder found in the same directory is for manually adding mods to the game, this is mainly for the use of Java based mods
 
@@ -102,3 +102,6 @@ This is the current, temp layout that I have, lets work our way top down:
     - where server based lua code goes
 - Cotents/mods/ProjectZomboidMod/42/media/lua/shared
     - where code that runs on both client and server goes
+
+Here is a command to create the exact same setup - make sure you are already in your Root folder of `C:\Users\[User]\Zomboid\Workshop\[FolderName]`
+`mkdir -p Contents/mods/ProjectZomboidMod/42/media/lua/{client,server,shared} Contents/mods/ProjectZomboidMod/common Contents/mods/ProjectZomboidMod/media/lua/{client,server,shared} && touch mod.info preview.png README.md Contents/mods/ProjectZomboidMod/{mod.info,poster.png} Contents/mods/ProjectZomboidMod/42/{mod.info,poster.png} Contents/mods/ProjectZomboidMod/42/media/lua/client/client.lua Contents/mods/ProjectZomboidMod/42/media/lua/server/server.lua Contents/mods/ProjectZomboidMod/42/media/lua/shared/shared.lua Contents/mods/ProjectZomboidMod/common/.placeholder Contents/mods/ProjectZomboidMod/media/lua/client/client.lua Contents/mods/ProjectZomboidMod/media/lua/server/server.lua Contents/mods/ProjectZomboidMod/media/lua/shared/shared.lua`
