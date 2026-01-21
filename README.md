@@ -13,42 +13,46 @@ Zomboid Workshop folder: C:\Users\[User]\Zomboid\Workshop
 This is where we will actually be making our mods
 Note that the "mods" folder found in the same directory is for manually adding mods to the game, this is mainly for the use of Java based mods
 
+Note that I could also use Branches in terms of development, both if I am making a smorgasbord of a mod, if I am working on seperate aspects, or the mod gets very large
+
 ---
 
 # File Structure
 
 A bit of information here:
 
+```
 .
 ├── mod.info
 ├── preview.png
 ├── README.md
 └── Contents
-└── mods
-└── ProjectZomboidMod
-├── mod.info
-├── poster.png
-├── 42
-│ ├── mod.info
-│ ├── poster.png
-│ └── media
-│ └── lua
-│ ├── client
-│ │ └── client.lua
-│ ├── server
-│ │ └── server.lua
-│ └── shared
-│ └── shared.lua
-├── common
-│ └── .placeholder
-└── media
-└── lua
-├── client
-│ └── client.lua
-├── server
-│ └── server.lua
-└── shared
-└── shared.lua
+    └── mods
+        └── ProjectZomboidMod
+            ├── mod.info
+            ├── poster.png
+            ├── 42
+            │   ├── mod.info
+            │   ├── poster.png
+            │   └── media
+            │       └── lua
+            │           ├── client
+            │           │   └── client.lua
+            │           ├── server
+            │           │   └── server.lua
+            │           └── shared
+            │               └── shared.lua
+            ├── common
+            │   └── .placeholder
+            └── media
+                └── lua
+                    ├── client
+                    │   └── client.lua
+                    ├── server
+                    │   └── server.lua
+                    └── shared
+                        └── shared.lua
+```
 
 ### I could be wrong on this, this is just what I know of, I can correct this as needed
 
